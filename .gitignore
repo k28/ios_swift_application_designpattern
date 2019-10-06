@@ -24,3 +24,5 @@ Pods/*
 !.gitkeep
 .DS_Store
 
+.build
+
