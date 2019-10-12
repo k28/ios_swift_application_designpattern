@@ -12,6 +12,10 @@ class TaskListViewController: UIViewController {
 
     var dataSource: TaskDataSource!
     var tableView: UITableView!
+    
+    convenience init() {
+        self.init(nibName: nil, bundle: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +27,11 @@ class TaskListViewController: UIViewController {
         tableView.dataSource = self
         tableView.register(TaskListCell.self, forCellReuseIdentifier: "Cell")
         view.addSubview(tableView)
+        
+        view.backgroundColor = UIColor.red
+        
+        let barButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(barButtonTrapped(_:)))
+        navigationItem.rightBarButtonItem = barButton
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,11 +39,20 @@ class TaskListViewController: UIViewController {
         dataSource.loadData()
         tableView.reloadData()
     }
+    
+    @objc func barButtonTrapped(_ sender: UIBarButtonItem) {
+        let controller = CreateTaskViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }
 
 extension TaskListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataSource.count()
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 68
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

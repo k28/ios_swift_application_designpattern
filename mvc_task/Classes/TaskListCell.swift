@@ -17,7 +17,7 @@ class TaskListCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
         taskLabel = UILabel()
-        taskLabel.textColor = UIColor.red
+        taskLabel.textColor = UIColor.black
         taskLabel.font = UIFont.systemFont(ofSize: 14)
         contentView.addSubview(taskLabel)
         

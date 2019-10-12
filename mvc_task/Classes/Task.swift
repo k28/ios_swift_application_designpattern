@@ -28,7 +28,7 @@ class Task {
         UserDefaukltsで保存したdictionaryから生成する事を目的としている
     */
     init(from dictionary: [String: Any]) {
-        self.text = dictionary["text"] as! String
+        self.text = dictionary["task"] as! String
         self.deadline = dictionary["deadline"] as! Date
     }
 }
