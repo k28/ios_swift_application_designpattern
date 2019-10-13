@@ -10,10 +10,23 @@ import Foundation
 import UIKit
 
 /**
-    - 画像をダウンロードするリクエストを送る
-    - 画像をダウンロードしたらキャッシュする
-    - 画像のダウンロードに成功したら UIImageを返す
-    - ErrorがあったらErrorを返す
+- 画像をダウンロードするリクエストを送る
+- 画像をダウンロードしたらキャッシュする
+- 画像のダウンロードに成功したら UIImageを返す
+- ErrorがあったらErrorを返す
+
+### 使い方
+```
+let imageDownloader = ImageDownloader()
+let imageURL = URL(string: test)
+
+ImageDownloader.downloadImage(imageURL: imageURL,
+                              success: { (image) in 
+    // 成功したらimageが返る
+}) { (error) in
+    // 失敗したらerrorが返る
+}
+```
 */
 final class ImageDownloader {
     // UIImageをキャッシュする変数
