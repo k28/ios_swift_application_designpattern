@@ -48,7 +48,9 @@ final class UserListViewModel {
         api.getUsers(success: { (users) in
             self.users.append(contentsOf: users)
             for user in users {
-                // TODO UserCellViewModelの配列を作成
+                // UserCellViewModelの配列を作成
+                let userCellViewModel = UserCellViewModel(user: user)
+                self.cellViewModels.append(userCellViewModel)
                 
                 // 通知がせ成功したので, .finishを送る
                 self.stateDidUpdate?(.finish)
