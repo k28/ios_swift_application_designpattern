@@ -18,6 +18,7 @@
 		E56EEF212353CA2200678AF7 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EEF202353CA2200678AF7 /* ImageDownloader.swift */; };
 		E56EEF232353CE5B00678AF7 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EEF222353CE5B00678AF7 /* UserListViewModel.swift */; };
 		E56EEF252353D29F00678AF7 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EEF242353D29F00678AF7 /* UserCellViewModel.swift */; };
+		E56EEF282356697500678AF7 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EEF272356697500678AF7 /* UIImage-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E56EEF202353CA2200678AF7 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		E56EEF222353CE5B00678AF7 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
 		E56EEF242353D29F00678AF7 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
+		E56EEF272356697500678AF7 /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		E56EEF18235285D700678AF7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E56EEF262356693700678AF7 /* extension */,
 				E56EEF19235286A400678AF7 /* Model */,
 				E56EEF1A235286B200678AF7 /* ViewModel */,
 				E56EEF1B235286BB00678AF7 /* View_ViewController */,
@@ -112,6 +115,14 @@
 			children = (
 			);
 			path = View_ViewController;
+			sourceTree = "<group>";
+		};
+		E56EEF262356693700678AF7 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				E56EEF272356697500678AF7 /* UIImage-Extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				E56EEF092352859400678AF7 /* ViewController.swift in Sources */,
 				E56EEF232353CE5B00678AF7 /* UserListViewModel.swift in Sources */,
 				E56EEF052352859400678AF7 /* AppDelegate.swift in Sources */,
+				E56EEF282356697500678AF7 /* UIImage-Extension.swift in Sources */,
 				E56EEF072352859400678AF7 /* SceneDelegate.swift in Sources */,
 				E56EEF252353D29F00678AF7 /* UserCellViewModel.swift in Sources */,
 				E56EEF212353CA2200678AF7 /* ImageDownloader.swift in Sources */,
