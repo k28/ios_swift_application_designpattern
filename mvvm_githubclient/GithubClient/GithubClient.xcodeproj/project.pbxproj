@@ -20,6 +20,7 @@
 		E56EEF252353D29F00678AF7 /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EEF242353D29F00678AF7 /* UserCellViewModel.swift */; };
 		E56EEF282356697500678AF7 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EEF272356697500678AF7 /* UIImage-Extension.swift */; };
 		E56EEF2A23566CD000678AF7 /* TimeLineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EEF2923566CD000678AF7 /* TimeLineCell.swift */; };
+		E56EEF2C23566F3B00678AF7 /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E56EEF2B23566F3B00678AF7 /* TimeLineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E56EEF242353D29F00678AF7 /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		E56EEF272356697500678AF7 /* UIImage-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 		E56EEF2923566CD000678AF7 /* TimeLineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineCell.swift; sourceTree = "<group>"; };
+		E56EEF2B23566F3B00678AF7 /* TimeLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				E56EEF2923566CD000678AF7 /* TimeLineCell.swift */,
+				E56EEF2B23566F3B00678AF7 /* TimeLineViewController.swift */,
 			);
 			path = View_ViewController;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				E56EEF052352859400678AF7 /* AppDelegate.swift in Sources */,
 				E56EEF282356697500678AF7 /* UIImage-Extension.swift in Sources */,
 				E56EEF072352859400678AF7 /* SceneDelegate.swift in Sources */,
+				E56EEF2C23566F3B00678AF7 /* TimeLineViewController.swift in Sources */,
 				E56EEF252353D29F00678AF7 /* UserCellViewModel.swift in Sources */,
 				E56EEF212353CA2200678AF7 /* ImageDownloader.swift in Sources */,
 				E56EEF2A23566CD000678AF7 /* TimeLineCell.swift in Sources */,
